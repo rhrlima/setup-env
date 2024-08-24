@@ -1,13 +1,13 @@
-all: brew brew.apps omp.config
-
-brew:
+mac: mac.brew mac.apps mac.omp.config
+	
+mac.brew:
 	sh scripts/brew.sh
-	echo "---"
+	@echo "----------"
 
-brew.apps:
+mac.apps:
 	sh scripts/brew-apps.sh
-	echo "---"
+	@echo "----------"
 
-omp.config:
+mac.omp.config:
 	sh config/oh-my-posh.sh
-	echo "---"
+	@echo "----------"
