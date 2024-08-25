@@ -2,7 +2,7 @@
 
 echo "BREW APPS"
 
-APPS=$(cat ./apps)
+APPS=$(cat ./resources/apps)
 INSTALLED=$(brew list)
 
 for app in $APPS; do
